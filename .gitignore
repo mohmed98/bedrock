@@ -28,3 +28,31 @@ wp-config.php
 # htaccess
 /.htaccess
 
+app/public/*
+# Application
+app/bedrock/web/app/plugins/*
+!app/bedrock/web/app/plugins/.gitkeep
+app/bedrock/web/app/mu-plugins/*/
+app/bedrock/web/app/themes/twentytwentythree/
+app/bedrock/web/app/upgrade
+app/bedrock/web/app/uploads/*
+!app/bedrock/web/app/uploads/.gitkeep
+app/bedrock/web/app/cache/*
+
+# WordPress
+app/bedrocweb/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
